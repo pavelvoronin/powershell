@@ -2,23 +2,27 @@
 This build is parameterized. Add the following parameters:
 ----------------------
 Type: String Parameter
-Name: AD_server 
+Name: AD_server
 Description: Name or IP Address of the remote AD_server
 ----------------------
 Type: String Parameter
-Name: AD_Admin_User 
+Name: AD_Admin_User
+Default Value: AD admin; 
 Description: Username to connect to the remote AD_server
 ----------------------
 Type: Password Parameter
 Name: AD_Password
+Default Value: !TestADadmin 
 Description: Password to connect to the remote AD_server
 ----------------------
 Type: String Parameter
 Name: NewLocalAdmin
+Default Value:  TSadmin;
 Description: Username of new local admin
 ----------------------
 Type: Password Parameter
 Name: NewLocalPassword
+Default Value: !TestLocalAdmin 
 Description: Password of new local admin
 -----------------------
 #>
